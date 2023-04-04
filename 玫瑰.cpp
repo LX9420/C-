@@ -140,7 +140,8 @@ float f(vec2 fragCoord) {
         return shading(pos, gradient(pos), eye);
 }
 int main() {
-    puts("\033[91m");
+    puts("\n\n\n\n\n\n\n\n\n\
+    这是一朵花");
     for (int y = 0; y < 80; y++) {
         for (int x = 0; x < 160; x++)
             putchar("  .,-:;+=*#@"[(int)(f(make2((x / 160.0f - 0.5f) * 2.0f, (y / 80.0f - 0.5f) * -2.0f)) * 12.0f)]);
