@@ -19,7 +19,15 @@ int main() {
 HANDLE o = GetStdHandle(STD_OUTPUT_HANDLE);
 _TCHAR buffer[25][80] = { _T(' ') };
 _TCHAR ramp[] = _T(".:-=+*#%@");
-     system("colorc"); 
+     system("colorc");
+	/*颜色表：0=黑  1=蓝  
+          2=绿  3=水绿 
+          4=红  5=紫 
+		  6=黄  7=白
+		  8=灰   9=亮蓝
+		  a=亮绿   b=亮青
+		  c=亮红   d=亮紫
+		  e=亮黄    f=亮白  */
  
 for (float t = 0.0f;; t += 0.1f) {
 	int sy = 0;
@@ -50,7 +58,7 @@ else
 	SetConsoleCursorPosition(o, coord);
 	WriteConsole(o, buffer[sy], 79, NULL, 0);
 }
-Sleep(13);/*�ٶȵ���*/ 
+Sleep(13);//颜色调节 
 }
 }
 
