@@ -58,7 +58,7 @@ else
 	SetConsoleCursorPosition(o, coord);
 	WriteConsole(o, buffer[sy], 79, NULL, 0);
 }
-Sleep(13);//颜色调节 
+Sleep(13);//跳动速度调节 
 }
 }
 
